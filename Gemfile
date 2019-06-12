@@ -32,11 +32,15 @@ gem 'mysql2', '~> 0.4.4'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+#gem react-on-rails
+gem 'react_on_rails', '11.1.4'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker'
+# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

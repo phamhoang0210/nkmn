@@ -1,4 +1,4 @@
-class Api::V01::RolesController < ApplicationController
+class Api::V01::RolesController < Apiv01Controller
   skip_before_action :verify_authenticity_token
   def index
     @record = Role.all

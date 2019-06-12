@@ -1,4 +1,4 @@
-class Api::V01::UsersController < ApplicationController
+class Api::V01::UsersController < Apiv01Controller
   skip_before_action :verify_authenticity_token
 
   #Get api/v01/user
@@ -19,7 +19,6 @@ class Api::V01::UsersController < ApplicationController
   #POST api/v01/user
   def create
      @record = User.new(entity_params)
-     binding.pry
      if @record.save
         render json: {status:'SUCCESS', messages: 'Save User', data: @record}, status: :ok
      else

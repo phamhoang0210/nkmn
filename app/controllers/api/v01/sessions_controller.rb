@@ -1,4 +1,4 @@
-class Api::V01::SessionsController < ApplicationController
+class Api::V01::SessionsController < Apiv01Controller
   skip_before_action :verify_authenticity_token, :require_login, only: [:new, :create, :destroy]
   def new
   end
