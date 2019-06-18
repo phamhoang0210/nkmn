@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+**** document npm package
+  # npm install qs (qs)
+  # npm install deep-merge  (deep-merge)
+  # npm install --save react-router (react-router)
+  # npm install --save redux-thunk (redux-thunk)
+  # npm install --save react-redux (react-redux)
+  # npm install axios (axios)
